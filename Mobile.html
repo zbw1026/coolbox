@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <script>
+        // 检测设备类型
+        function isMobileDevice() {
+          return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+        }
+        
+        // 跳转到index.html页面
+        function redirectToIndex() {
+          window.location.href = "index.html";
+        }
+        
+        // 检测设备类型并执行跳转
+        window.onload = function() {
+          if (!isMobileDevice()) {
+            redirectToIndex();
+          }
+        };
+      </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>酷盒子官网</title>
+    <style>
+        .download-button {
+      background-color: #2196f3;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 20px;
+      text-decoration: none;
+      display: inline-block;
+      margin: 20px;
+      transition: background-color 0.3s;
+    }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #2196f3;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #2196f3;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+        }
+        .slide {
+  width: 80%;
+  height: auto;
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>酷盒子工作室</h1>
+        <h3>您当前正在使用移动设备访问，在电脑上访问更佳</h3>
+    </div>
+    <div class="slideshow-container">
+        <img src="https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1687829678130/%E6%BC%94%E7%A4%BA%E6%96%87%E7%A8%BF1_02.png" class="slide">
+       </div>
+    <div class="content">
+        <h2>欢迎来到酷盒子工作室！</h2>
+        <h3>在电脑上访问可以获得更多信息
+    </div>
+    <p>想要下载我们的手表软件？提取码：0000</p>
+    <a href="https://wwu.lanzoub.com/b04duhmjg" class="download-button">点击下载</a>
+    <a href="https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1688441861781/%E6%94%B6%E6%AC%BE.jpg" class="download-button">打赏</a>
+    <div class="footer">
+        <p>版权所有 &copy; 2023 酷盒子工作室</p>
+    </div>
+ </body>
+</html>
