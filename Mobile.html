@@ -58,9 +58,23 @@
             text-align: center;
         }
         .slide {
-  width: 80%;
-  height: auto;
-    </style>
+         width: 80%;
+         height: auto;
+         #responsive-iframe {
+        height: 800px; /* 设置一个固定的高度，或根据需要进行调整 */
+    }
+</style>
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+      var iframe = document.getElementById('responsive-iframe');
+      iframe.style.width = window.innerWidth + 'px';
+  });
+
+  window.addEventListener('resize', function() {
+      var iframe = document.getElementById('responsive-iframe');
+      iframe.style.width = window.innerWidth + 'px';
+  });
+</script>
 </head>
 <body>
     <div class="header">
@@ -74,6 +88,7 @@
         <h2>欢迎来到酷盒子工作室！</h2>
         <h3>在电脑上访问可以获得更多信息
     </div>
+    <iframe id="responsive-iframe" src="https://player.bilibili.com/player.html?aid=230444266&bvid=BV1Xh411w7ZB&cid=1182130912&page=1"></iframe>
     <p>想要下载我们的手表软件？提取码：0000</p>
     <a href="https://wwu.lanzoub.com/b04duhmjg" class="download-button">点击下载</a>
     <a href="https://fs-im-kefu.7moor-fs1.com/29397395/4d2c3f00-7d4c-11e5-af15-41bf63ae4ea0/1688441861781/%E6%94%B6%E6%AC%BE.jpg" class="download-button">打赏</a>
