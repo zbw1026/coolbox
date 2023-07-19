@@ -45,11 +45,13 @@
       background-color: #1565c0;
     }
     main {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 50px;
-      text-align: center;
-    }
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  margin-bottom: 0;
+}
     h1 {
       margin-top: 0;
     }
@@ -100,6 +102,7 @@
         height: 300px; /* 设置一个固定的高度，或根据需要进行调整 */
         margin: 0 auto; /* 添加这行代码使框在水平方向上居中 */
     }
+    
   </style>
 <style>
   #responsive-iframe-container {
@@ -137,6 +140,9 @@ img {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+.container {
+  width: 75%;
+}
 </style>
 
 </head>
@@ -147,18 +153,27 @@ img {
       <a href="index.html">首页</a>
       <a href="ds.html">打赏</a>
       <a href="app.html">应用介绍</a>
-      <a href="doc.html">✨教程中心</a>
+      <a href="doc.html">✨文档中心</a>
       <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=8nwGPEN7CIyX5msFR0hGNh87uTPykfhg&authKey=HO4IISXZjUUyZuA%2F%2FCly0%2BSwO%2BWsr8aP15Vy0P6pmHGRpCcvmH2Dp1HkzN21V37%2B&noverify=0&group_code=183921194">联系我们</a>
     </nav>
   </header>
  <main>
-      <a href="https://pan.wps.cn/l/snwAvVY2W86A" target="_blank">
-        <div class="container">
-          <img src="doc.jpg" alt="Image">
-          <div class="text">
-            <h3>小天才刷Aosp wear教程</h3>
-            <p>作者：Aurora明 更新日期：23/7/16</p>
-          </div>
-        </div>
-      </a>
+  <a href="https://pan.wps.cn/l/snwAvVY2W86A" target="_blank">
+    <div class="container">
+      <img src="doc.jpg" alt="Image" style="max-width: 100%; height: auto;">
+      <div class="text">
+        <h3>小天才刷Aosp wear教程(半成品)</h3>
+        <p>作者：Aurora明 更新日期：23/7/16</p>
+      </div>
+    </div>
+  </a>
+     <a href=emoji\index.html target="_blank">
+    <div class="container">
+      <img src="emoji/emoji.png" alt="Image" style="max-width: 100%; height: auto;">
+      <div class="text">
+        <h3>[内测]表情包合成器</h3>
+        <p>作者：苦力怕不暴 更新日期：23/7/19</p>
+      </div>
+    </div>
+  </a>
  </main>
