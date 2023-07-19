@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Emoji合成器</title>
+  <style>
+    body {
+      background-color: #2196f3;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+
+    h1 {
+      color: white;
+      font-size: 36px;
+    }
+
+    input[type="text"] {
+      width: 200px;
+      height: 30px;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      color: white;
+      background-color: #1976d2;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0d47a1;
+    }
+
+    #normal-result {
+      font-size: 50px;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    #easter-egg {
+      display: none;
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+  <script>
+    function mergeEmoji() {
+      var emoji1 = document.getElementById("emoji1").value;
+      var emoji2 = document.getElementById("emoji2").value;
+      var normalResult = document.getElementById("normal-result");
+      var easterEgg = document.getElementById("easter-egg");
+      
+      normalResult.textContent = emoji1 + emoji2;
+      
+      if (emoji1 === "🐓" && emoji2 === "🏀") {
+        normalResult.style.display = "none";
+        easterEgg.style.display = "block";
+      } else {
+        normalResult.style.display = "block";
+        easterEgg.style.display = "none";
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Emoji合成器</h1>
+  <input type="text" id="emoji1" placeholder="请输入第一个emoji">
+  <br>
+  <input type="text" id="emoji2" placeholder="请输入第二个emoji">
+  <br>
+  <button onclick="mergeEmoji()">合成</button>
+  <br>
+  <div id="normal-result"></div>
+  <img id="easter-egg" src="ikun.png" alt="彩蛋" width="200" height="200">
+  <h3 style="color: white;">此项目由苦力怕版本维护&copy;2023-now</h3>
+</body>
+</html>
